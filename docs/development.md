@@ -3,7 +3,7 @@
 ## Prerequisites
 
 - macOS 14 or later
-- Node.js 20 or later
+- Node.js 22 or later
 - npm
 - Xcode Command Line Tools with Swift 6.0 or later
 

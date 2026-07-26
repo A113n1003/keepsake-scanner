@@ -24,7 +24,7 @@
 
 - macOS 14 或更高版本
 - macOS“图像捕捉”支持的扫描仪
-- Node.js 20 或更高版本
+- Node.js 22 或更高版本
 - Xcode Command Line Tools
 
 ## 快速开始

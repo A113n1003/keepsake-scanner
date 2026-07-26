@@ -25,7 +25,7 @@ Keepsake Scanner talks to scanners through macOS ImageCaptureCore, detects indiv
 - macOS 14 or later
 - A scanner supported by macOS Image Capture
 - Apple Silicon or Intel Mac for development; published artifacts may be architecture-specific
-- Node.js 20 or later
+- Node.js 22 or later
 - Xcode Command Line Tools
 
 ## Quick start
