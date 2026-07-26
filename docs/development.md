@@ -5,7 +5,7 @@
 - macOS 14 or later
 - Node.js 20 or later
 - npm
-- Xcode Command Line Tools
+- Xcode Command Line Tools with Swift 6.0 or later
 
 ## Install
 
@@ -44,7 +44,7 @@ npm run check
 
 ## Internationalization
 
-Renderer strings live in `src/i18n.jsx`. Desktop process strings live in `electron/i18n.cjs`. Native progress and error messages use `localized` pairs in the Swift helper.
+Renderer strings live in `src/i18n.js`. Desktop process strings live in `electron/i18n.cjs`. Native progress and error messages use `localized` pairs in the Swift helper.
 
 Every user-visible change must include English and Simplified Chinese text. English is the source language and fallback.
 
