@@ -1,0 +1,49 @@
+name: Scanner compatibility
+description: Report a scanner discovery or acquisition problem.
+title: "[Scanner]: "
+labels: ["scanner", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include the scanner UUID, serial number, local paths, or scanned images.
+
+  - type: input
+    attributes:
+      label: Manufacturer and model
+      placeholder: "For example: Canon CanoScan …"
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: Connection
+      options:
+        - USB
+        - Network
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: macOS version
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: Does Apple Image Capture scan successfully?
+      options:
+        - "Yes"
+        - "No"
+        - Device is not listed there
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Behavior
+      description: Explain where discovery or scanning stops and include sanitized error text.
+    validations:
+      required: true

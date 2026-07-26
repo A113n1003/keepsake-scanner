@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Build products
+dist/
+release/
+native/.build/
+build/native/
+*.dmg
+*.zip
+*.blockmap
+
+# Test and tool output
+coverage/
+*.log
+.eslintcache
+
+# Local settings and secrets
+.env
+.env.*
+!.env.example
+
+# macOS and Xcode
+.DS_Store
+xcuserdata/
+*.xcuserstate
+
+# Temporary files
+tmp/
+*.tmp

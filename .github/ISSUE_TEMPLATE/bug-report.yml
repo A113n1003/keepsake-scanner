@@ -1,0 +1,60 @@
+name: Bug report
+description: Report a reproducible problem with sanitized information.
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not attach real scans, device identifiers, credentials, or local user paths.
+
+  - type: checkboxes
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues.
+          required: true
+        - label: I removed private photos, metadata, identifiers, and local paths.
+          required: true
+
+  - type: textarea
+    attributes:
+      label: What happened?
+      description: Describe the expected and actual behavior.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open…
+        2. Select…
+        3. Observe…
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: macOS version
+      placeholder: "For example: macOS 14.6"
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: Work mode
+      options:
+        - Fast (300 dpi)
+        - Standard (600 dpi)
+        - Archive (1200 dpi)
+        - Import image
+        - Demo
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Sanitized logs
+      description: Paste only the smallest relevant excerpt after removing personal data.
+      render: text
